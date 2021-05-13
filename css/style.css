@@ -1,0 +1,243 @@
+/* Css Reset */
+*{
+    margin:0px;
+    paddding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Style logo */
+#logo{
+    margin:-12px 16px;
+}
+
+#logo img{
+    height: 70px;
+    width: 65px;
+    margin: 9px 5px;
+}
+/*style navbar*/
+
+#navbar{
+    font-family: 'PT Sans', sans-serif;
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    
+    
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+
+ #navbar ul{
+    display:flex;
+    align-items: center;
+    margin: 3px -40px;
+    
+}
+
+#navbar ul li{
+    
+    list-style: none;
+}
+
+#navbar ul li a{
+
+    text-decoration: none;
+    margin: 4px 4px;
+    padding: 1px 9px;
+    font-size: 1rem;
+    color:rgb(240, 100, 20);
+
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    border-radius:34px;
+
+} 
+
+/* home style */
+#home{
+    font-family: 'PT Sans', sans-serif;
+    display:flex;
+    flex-direction:column;
+    padding:30px 34px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    font-size: 2.1rem;
+    text-align: center;
+    padding:16px;
+    color:rgb(34, 20, 20);
+    height: 350px;
+    /* margin: 13px 23px; */
+}
+
+#home::before{
+    content:"";
+    background:url(../b.jpg)no-repeat center center/cover;
+    /* background-color:darkgrey; */
+    position:absolute;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+
+
+ 
+ .some{
+     text-align: center;
+    font-size: 1.09rem;
+    color:black;
+}
+.btn{
+    font-size: 1.03rem;
+    margin:15px 14px;
+    padding:4px 7px;
+    border-radius: 10px;
+    cursor:pointer;
+    border:solid rgb(253, 246, 246) 2px;
+    background-color:rgb(253, 70, 70);
+    color:white;
+} 
+.h-primari{
+    display: block;
+    width: 270px;
+    height:45px;
+    margin:auto;
+    font-size: 3rem;
+    /* font-family: 'PT Sans', sans-serif; */
+    justify-content: center;
+    align-items: center;
+}
+/* .container{
+    margin: 137px 14px;
+   
+
+} */
+
+#services{
+    margin: 26px 2px;
+    display:flex;
+  
+    
+
+}
+#services .box{
+    border:2px solid red;
+    padding: 23px;
+    margin: 8px;
+    border-radius: 23px;
+    background-color: #fff6f6;
+}
+#services .box img{
+    height:104px;
+    width:150px;
+    margin:auto;
+    display: block;
+    padding: 14px 3px;
+
+
+}
+.box .h-secondriy{
+    display: block;
+    width:154px;
+    align-items: center;
+    margin: auto;
+    padding: 5px 6px;
+    font-size: 1.5rem;
+}
+ 
+/* Clinet Section */
+#client-section{
+  height: 253px;
+  position: relative;
+}
+#client-section::before{
+    content:"";
+    background:url(../14.jpg)no-repeat center center/cover;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.8;
+}
+
+#client{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#client img{
+    height: 100px;
+}
+
+.client-item{
+ 
+    padding:50px;
+}
+
+/* Contacts section */
+#contact{
+position: relative;
+}
+
+#contact::before{
+    content:"";
+    background:url(../13.jpg)no-repeat center center/cover;
+    height: 106%;
+    width: 100%;
+    position:absolute;
+    z-index:-1;
+    opacity: 0.4;
+
+    
+}
+
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:5px 20px;
+}
+#contact-box{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+#anu{
+    margin:20px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding:0.1rem;
+ 
+  font-size:0.7rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+    font-size:1.rem;
+}
